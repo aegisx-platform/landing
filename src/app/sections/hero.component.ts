@@ -60,6 +60,20 @@ import { CommonModule } from '@angular/common';
             <span class="hero__stat-label">License</span>
           </div>
         </div>
+
+        <!-- Tech Stack Logos -->
+        <div class="hero__tech-stack">
+          <span class="hero__tech-label">Powered by</span>
+          <div class="hero__tech-logos">
+            <a href="https://angular.dev" target="_blank" class="hero__tech-logo" title="Angular 19">
+              <img src="assets/logos/angular_wordmark_white.png" alt="Angular" />
+            </a>
+            <span class="hero__tech-plus">+</span>
+            <a href="https://fastify.dev" target="_blank" class="hero__tech-logo" title="Fastify">
+              <img src="assets/logos/fastify-square.svg" alt="Fastify" />
+            </a>
+          </div>
+        </div>
       </div>
 
       <!-- Hero Visual -->
@@ -235,6 +249,50 @@ import { CommonModule } from '@angular/common';
         width: 1px;
         height: 40px;
         background: rgba(255, 255, 255, 0.1);
+      }
+
+      &__tech-stack {
+        margin-top: 2.5rem;
+        padding-top: 2rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      &__tech-label {
+        display: block;
+        font-size: 0.75rem;
+        color: #64748b;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        margin-bottom: 1rem;
+      }
+
+      &__tech-logos {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+      }
+
+      &__tech-logo {
+        display: flex;
+        align-items: center;
+        opacity: 0.85;
+        transition: all 0.2s ease;
+
+        &:hover {
+          opacity: 1;
+          transform: translateY(-2px);
+        }
+
+        img {
+          height: 36px;
+          width: auto;
+        }
+      }
+
+      &__tech-plus {
+        color: #64748b;
+        font-size: 1.5rem;
+        font-weight: 300;
       }
 
       &__visual {
