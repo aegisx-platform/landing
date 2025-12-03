@@ -1,14 +1,15 @@
 import { Component } from '@angular/core';
-import { HeroComponent, TechStackComponent, FeaturesComponent, PricingComponent, CtaComponent } from './sections';
+import { HeroComponent, TechStackComponent, FeaturesComponent, ThemeBuilderShowcaseComponent, PricingComponent, CtaComponent } from './sections';
 
 @Component({
-  imports: [HeroComponent, TechStackComponent, FeaturesComponent, PricingComponent, CtaComponent],
+  imports: [HeroComponent, TechStackComponent, FeaturesComponent, ThemeBuilderShowcaseComponent, PricingComponent, CtaComponent],
   selector: 'ax-root',
   template: `
     <main class="landing">
       <ax-hero />
       <ax-tech-stack />
       <ax-features />
+      <ax-theme-builder-showcase />
       <ax-pricing />
       <ax-cta />
     </main>

@@ -70,7 +70,7 @@ import { CommonModule } from '@angular/common';
             </a>
             <span class="hero__tech-plus">+</span>
             <a href="https://fastify.dev" target="_blank" class="hero__tech-logo" title="Fastify">
-              <img src="assets/logos/fastify-square.svg" alt="Fastify" />
+              <img src="assets/logos/fastify-white-landscape.svg" alt="Fastify" />
             </a>
           </div>
         </div>
