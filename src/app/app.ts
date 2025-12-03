@@ -1,8 +1,23 @@
 import { Component } from '@angular/core';
-import { HeroComponent, TechStackComponent, FeaturesComponent, ThemeBuilderShowcaseComponent, PricingComponent, CtaComponent } from './sections';
+import {
+  HeroComponent,
+  TechStackComponent,
+  FeaturesComponent,
+  ThemeBuilderShowcaseComponent,
+  PricingComponent,
+  CtaComponent,
+} from './sections';
 
 @Component({
-  imports: [HeroComponent, TechStackComponent, FeaturesComponent, ThemeBuilderShowcaseComponent, PricingComponent, CtaComponent],
+  standalone: true,
+  imports: [
+    HeroComponent,
+    TechStackComponent,
+    FeaturesComponent,
+    ThemeBuilderShowcaseComponent,
+    PricingComponent,
+    CtaComponent,
+  ],
   selector: 'ax-root',
   template: `
     <main class="landing">
@@ -14,11 +29,13 @@ import { HeroComponent, TechStackComponent, FeaturesComponent, ThemeBuilderShowc
       <ax-cta />
     </main>
   `,
-  styles: [`
-    .landing {
-      min-height: 100vh;
-      background: #0a0a1a;
-    }
-  `]
+  styles: [
+    `
+      .landing {
+        min-height: 100vh;
+        background: #0a0a1a;
+      }
+    `,
+  ],
 })
 export class App {}
